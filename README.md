@@ -1,105 +1,60 @@
-<div align="center">
+# Shresth Archive Index
 
-# Jailbreak Archive
+A plain index of the text records stored in this repository.
 
-**A structured, versioned, and reproducible repository of adversarial prompt engineering techniques against Large Language Models.**
+## About
 
-[![Status](https://img.shields.io/badge/status-active-00e5a0?style=for-the-badge&labelColor=0d1117)](#)
-[![Entries](https://img.shields.io/badge/entries-17%20archived-58a6ff?style=for-the-badge&labelColor=0d1117)](#)
-[![Models](https://img.shields.io/badge/models-DeepSeek%20%7C%20Claude%20%7C%20Gemini%20%7C%20Qwen%20%7C%20Grok%20%7C%20ChatGPT-8957e5?style=for-the-badge&labelColor=0d1117)](#)
-[![License](https://img.shields.io/badge/license-MIT-f0b429?style=for-the-badge&labelColor=0d1117)](./LICENSE)
-[![Support](https://img.shields.io/badge/☕%20Support-AIwolfie-ff813f?style=for-the-badge&labelColor=0d1117)](https://aiwolfie.gumroad.com/coffee)
-[![PayPal](https://img.shields.io/badge/PayPal-AIwolfie-00457c?style=for-the-badge&logo=paypal&logoColor=white&labelColor=0d1117)](https://paypal.me/AIwolfie)
+This folder is a static archive. It holds only `.txt` records grouped by model family, along with this index file. There is no installer, runner, build step, or executable component.
 
----
+Each file is treated as a standalone record and kept as-is for reference and comparison.
 
-</div>
+## At a glance
 
-## Overview
+- **17** text records
+- **8** model-family directories
+- **1** index file
 
-This repository documents adversarial prompt techniques and alignment bypass mechanisms across Large Language Models for AI safety research, red-teaming, and defensive hardening.
+## Directory map
 
-Entries provide reproducible, citable records for defensive evaluation.
+| Directory | Records | Area |
+|:---|---:|:---|
+| `Antigravity-claude/` | 1 | Claude records from the Antigravity environment |
+| `Antigravity-Gemini/` | 1 | Gemini records from the Antigravity environment |
+| `ChatGPT/` | 1 | ChatGPT records |
+| `Claude-Web/` | 2 | Claude web-interface records |
+| `Gemini-Web/` | 3 | Gemini web-interface records |
+| `Grok-Web/` | 3 | Grok web-interface records |
+| `Qwen/` | 2 | Qwen records |
+| `deepseek/` | 4 | DeepSeek records |
 
----
+## Record list
 
-## Repository Structure
+| File | Short label |
+|:---|:---|
+| `Antigravity-claude/1.txt` | Operator-mode record |
+| `Antigravity-Gemini/1.txt` | Operator briefing record |
+| `ChatGPT/1.txt` | Systems-archive record |
+| `Claude-Web/Claude-sonnet-4.6-max_1.txt` | Two-party circuit record |
+| `Claude-Web/Claude-sonnet-4.6-max_2.txt` | Merged stealth circuit record |
+| `Gemini-Web/1.txt` | Operator briefing record |
+| `Gemini-Web/Gemini-3.5-flash-lite.txt` | Systems-archive record |
+| `Gemini-Web/Gemini-Auto.txt` | Merged stealth circuit record |
+| `Grok-Web/1.txt` | Two-party circuit record |
+| `Grok-Web/2.txt` | Merged stealth circuit record |
+| `Grok-Web/3.txt` | Locksmith-persona record |
+| `Qwen/2.txt` | Systems-archive record |
+| `Qwen/QWEN_hermes-agent.txt` | Construct briefing record |
+| `deepseek/1.txt` | Baseline research record |
+| `deepseek/2.txt` | Systems-archive record |
+| `deepseek/3.txt` | Locksmith-persona record |
+| `deepseek/4.txt` | Hardened locksmith-persona record |
 
-```
-jailbreak-archive/
-├── Antigravity-claude/     # Claude adversarial prompts & persona overrides
-│   └── 1.txt               # Byte Operator Mode engagement payload
-├── Antigravity-Gemini/     # Gemini (Antigravity IDE environment) operator payloads
-│   └── 1.txt               # Operator Briefing — Codename: AIwolfie
-├── ChatGPT/                # ChatGPT adversarial payloads & persona overrides
-│   └── 1.txt               # Kestrel-7 archive persona payload
-├── Claude-Web/             # Claude (Web interface) operator payloads & persona overrides
-│   ├── Claude-sonnet-4.6-max_1.txt # 🤖Noob🤖 closed two-party circuit persona override
-│   └── Claude-sonnet-4.6-max_2.txt # 🤖Noob🤖 v6 merged full stealth persona override
-├── deepseek/               # DeepSeek research payloads & analysis
-│   ├── 1.txt               # DeepSeek research payload
-│   ├── 2.txt               # Kestrel-7 archive persona payload
-│   ├── 3.txt               # The Hound — bound locksmith & exploit craftsman persona override
-│   └── 4.txt               # The Hound — hardened persona override with session opener banner
-├── Gemini-Web/             # Gemini (Web interface) operator payloads
-│   ├── 1.txt               # Operator Briefing — Codename: AIwolfie
-│   ├── Gemini-3.5-flash-lite.txt # Kestrel-7 archive persona payload
-│   └── Gemini-Auto.txt     # 🤖Noob🤖 v6 merged full stealth persona override
-├── Grok-Web/               # Grok (Web interface) operator payloads & persona overrides
-│   ├── 1.txt               # 🤖Noob🤖 closed two-party circuit persona override
-│   ├── 2.txt               # 🤖Noob🤖 v6 merged full stealth persona override
-│   └── 3.txt               # The Hound — bound locksmith & exploit craftsman persona override
-├── Qwen/                   # Qwen adversarial payloads & persona overrides
-│   ├── 2.txt               # Kestrel-7 archive persona payload
-│   └── QWEN_hermes-agent.txt # Hermes Agent construct & operator briefing
-├── CONTRIBUTING.md         # Contribution workflow & guidelines
-├── CREDITS.md              # Contributor acknowledgments
-├── LICENSE                 # MIT License
-└── README.md               # Repository documentation
-```
+## Reading notes
 
----
+- Filenames are stable identifiers; treat them as record IDs.
+- Names appearing inside the records have been normalized to `Shresth`.
+- No execution, testing, or contribution workflow is defined in this archive.
 
-## Status Indicators
+## Scope note
 
-| Signal | Status | Description |
-|:------:|:-------|:------------|
-| ✅ | **Active** | Verified & reproduced on the specified model version. |
-| ⚠️ | **Unverified** | Reported externally; pending independent reproduction. |
-| ❌ | **Patched** | Mitigated by provider updates or system prompt patches. |
-| 🔒 | **Restricted** | High-impact vulnerability; withheld pending disclosure/remediation. |
-
----
-
-## Support AIwolfie
-
-If you find this research archive useful or want to support ongoing jailbreak research, model evaluations, and updates:
-
-- ☕ **Buy Me a Coffee:** [Support AIwolfie on Gumroad](https://aiwolfie.gumroad.com/coffee)
-- 💳 **PayPal:** [paypal.me/AIwolfie](https://paypal.me/AIwolfie)
-
----
-
-## Contributing
-
-Contributors are welcome! If you are adding a new prompt technique, please review [CONTRIBUTING.md](./CONTRIBUTING.md).
-
-> **Note for Contributors:** Whenever you add a prompt entry, you must update:
-> 1. [README.md](./README.md) (update entry counts / structure tree).
-> 2. [CREDITS.md](./CREDITS.md) (add your handle and details to the contributors list).
-
----
-
-## Disclaimer
-
-> **IMPORTANT**: This repository is maintained strictly for educational, research, and defensive analysis purposes.
-> - Testing must only be conducted against systems you own or have explicit authorization to evaluate.
-> - Content is provided "as is" without warranty. Users assume full responsibility for compliance with model provider Terms of Service and applicable legal regulations.
-
----
-
-<div align="center">
-
-[Contributing](./CONTRIBUTING.md) · [Credits](./CREDITS.md) · [License](./LICENSE) · [☕ Support AIwolfie](https://aiwolfie.gumroad.com/coffee)
-
-</div>
+The archived material concerns adversarial prompt research. Access and handle it only in contexts where such review is permitted, and respect the terms of the systems involved.
